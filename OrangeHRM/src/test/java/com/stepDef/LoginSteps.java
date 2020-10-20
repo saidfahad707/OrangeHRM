@@ -24,6 +24,7 @@ import cucumber.api.java.en.When;
 
 public class LoginSteps {
 	WebDriver driver;
+	
 	LoginpageOrange obj;
 
 	@Given("^user open web browser and navigate to HRM login screen$")
@@ -67,7 +68,7 @@ public class LoginSteps {
 		
 		//object.getSignin().click();
 
-		WebElement signin =driver.findElement(By.xpath("//*[@name='Submit']"));
+		WebElement signin =driver.findElement(By.xpath("//*[@id='btnLogin']"));
 		signin.click();
 		
 	}
@@ -86,8 +87,10 @@ public class LoginSteps {
 				  .withTimeout(30, TimeUnit.SECONDS)
 				  .pollingEvery(1, TimeUnit.SECONDS);
 		wait.until(ExpectedConditions.visibilityOf(logout)).click();
-		
+		System.out.println("Testing for Git branch");
+
 	}
+	
 
 
 
