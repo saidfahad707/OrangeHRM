@@ -89,6 +89,8 @@ public class LoginSteps {
 		wait.until(ExpectedConditions.visibilityOf(logout)).click();
 		System.out.println("Testing for Git branch");
 
+		
+		System.out.println("i love you");
 	}
 	
 
