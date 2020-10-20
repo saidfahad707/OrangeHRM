@@ -24,7 +24,6 @@ import cucumber.api.java.en.When;
 
 public class LoginSteps {
 	WebDriver driver;
-	
 	LoginpageOrange obj;
 
 	@Given("^user open web browser and navigate to HRM login screen$")
@@ -68,7 +67,7 @@ public class LoginSteps {
 		
 		//object.getSignin().click();
 
-		WebElement signin =driver.findElement(By.xpath("//*[@id='btnLogin']"));
+		WebElement signin =driver.findElement(By.xpath("//*[@name='Submit']"));
 		signin.click();
 		
 	}
