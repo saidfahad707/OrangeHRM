@@ -88,11 +88,7 @@ public class LoginSteps {
 				  .pollingEvery(1, TimeUnit.SECONDS);
 		wait.until(ExpectedConditions.visibilityOf(logout)).click();
 		System.out.println("Testing for Git branch");
-
-		
-		System.out.println("i love you");
 	}
-	
 
 
 
