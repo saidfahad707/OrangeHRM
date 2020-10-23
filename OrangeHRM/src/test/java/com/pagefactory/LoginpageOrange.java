@@ -23,6 +23,10 @@ public class LoginpageOrange {
 	public WebElement getUsername() {
 		return username;
 	}
+	
+	public void setUsername(WebElement username) {
+		this.username = username;
+	}
 
 	public WebElement getPassword() {
 		return password;
@@ -32,9 +36,8 @@ public class LoginpageOrange {
 		this.password = password;
 	}
 
-	public void setUsername(WebElement username) {
-		this.username = username;
-	}
+	
+
 
 	
 	

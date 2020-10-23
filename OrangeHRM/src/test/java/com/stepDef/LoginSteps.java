@@ -40,20 +40,15 @@ public class LoginSteps {
 	@Then("^user Navigate to Page and verify the Page Title is \"([^\"]*)\"$")
 	public void user_Navigate_to_Page_and_verify_the_Page_Title_is(String arg1) throws Throwable {
 //	  driver.getTitle();
-	  String actule = driver.getTitle();
+	  String actual = driver.getTitle();
 	  String expected = "OrangeHRM";
-	  Assert.assertTrue("the titel is Wrong", actule.contains(expected));
-	  
+	  Assert.assertTrue("the titel is Wrong", actual.contains(expected));
 	  
 	}
 	
 
-	
 	@Then("^user enter a valid username and password$")
 	public void user_enter_a_valid_username_and_password() throws Throwable {
-		
-//			driver.findElement(By.xpath("//*[@id='txtUsername']")).sendKeys("Admin");
-//			driver.findElement(By.xpath("//*[@id='txtPassword']")).sendKeys("admin123");
 		
 		obj.getUsername().sendKeys("Admin");
 		obj.getPassword().sendKeys("admin123");
@@ -63,12 +58,8 @@ public class LoginSteps {
 
 	@Then("^user click the Sign in button$")
 	public void user_click_the_Sign_in_button() throws Throwable {
-//		driver.findElement(By.xpath("//*[@id=\'btnLogin\']")).click();	
-//		Assert.assertTrue(2==4);
-		
-		//object.getSignin().click();
 
-		WebElement signin =driver.findElement(By.xpath("//*[@id='btnLogin']"));
+		WebElement signin = driver.findElement(By.xpath("//*[@name='Submit']"));
 		signin.click();
 		
 	}
@@ -91,9 +82,7 @@ public class LoginSteps {
 
 		
 		System.out.println("i love you");
+		
 	}
 	
-
-
-
 }
