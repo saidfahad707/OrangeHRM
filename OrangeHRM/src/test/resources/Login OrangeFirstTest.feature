@@ -8,5 +8,4 @@ Scenario: User able to login with valid credential
 	And user click the Sign in button 
 	Then user Navigate to Page and verify the Page Title is "OrangeHRM" 
 	When user click on log out button for Orange Hrm 
-	Then user Navigate to Page and verify the Page Title is "OrangeHRM" 
-	
+	Then user Navigate to Page and verify the Page Title is "OrangeHRM"
