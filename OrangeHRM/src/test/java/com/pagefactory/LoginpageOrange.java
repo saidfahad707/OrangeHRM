@@ -19,13 +19,8 @@ public class LoginpageOrange {
 	@FindBy (how= How.XPATH, using = "//*[@id='txtPassword']")
 	private WebElement password;
 	
-
 	public WebElement getUsername() {
 		return username;
-	}
-	
-	public void setUsername(WebElement username) {
-		this.username = username;
 	}
 
 	public WebElement getPassword() {
@@ -36,11 +31,9 @@ public class LoginpageOrange {
 		this.password = password;
 	}
 
-	
-
-
-	
-	
+	public void setUsername(WebElement username) {
+		this.username = username;
+	}
 
 
 	
